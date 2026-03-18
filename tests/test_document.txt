@@ -1,0 +1,45 @@
+DocIntel Test Document
+======================
+
+This is a sample document used for automated testing of the DocIntel platform.
+
+Section 1: Introduction to RAG
+--------------------------------
+Retrieval-Augmented Generation (RAG) is an AI framework that combines the power of
+large language models with external knowledge retrieval. Instead of relying solely on
+the model's training data, RAG fetches relevant documents from a knowledge base and
+uses them as context to generate accurate, grounded answers.
+
+The three core stages of RAG are:
+1. Indexing: Documents are chunked, embedded, and stored in a vector database.
+2. Retrieval: Given a user query, the top-K most similar chunks are fetched.
+3. Generation: The retrieved context is injected into the LLM prompt.
+
+Section 2: ChromaDB Vector Store
+----------------------------------
+ChromaDB is an open-source embedding database optimized for AI applications. It stores
+dense float vectors alongside metadata, enabling fast approximate nearest-neighbor search
+using the HNSW (Hierarchical Navigable Small World) algorithm.
+
+Key features:
+- Cosine similarity search for semantic matching
+- Persistent storage with automatic indexing
+- Metadata filtering for targeted document retrieval
+- Collections for logical grouping of embeddings
+
+Section 3: FastAPI Backend
+----------------------------
+FastAPI is a modern Python web framework built on Starlette and Pydantic. It offers:
+- Automatic OpenAPI documentation at /docs
+- Type-safe request/response validation via Pydantic v2
+- Async support for high-throughput ML workloads
+- Dependency injection for clean, testable architecture
+
+Section 4: Document Intelligence Use Cases
+-------------------------------------------
+DocIntel can be applied to:
+- Enterprise knowledge management and Q&A
+- Legal document analysis and search
+- Medical record retrieval and summarization
+- Customer support automation
+- Research paper discovery and synthesis

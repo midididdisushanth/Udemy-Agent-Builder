@@ -1,0 +1,53 @@
+/* DocIntel — Custom Gradio Styles */
+
+:root {
+  --docintel-purple: #6366f1;
+  --docintel-teal: #14b8a6;
+  --docintel-amber: #f59e0b;
+}
+
+/* Header branding */
+.gradio-container h1 {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Primary buttons */
+.gr-button-primary {
+  background: var(--docintel-purple) !important;
+  border-color: var(--docintel-purple) !important;
+}
+
+/* Chatbot message bubbles */
+.message.user {
+  background: var(--docintel-purple) !important;
+  color: #fff !important;
+}
+
+/* Source citation blockquotes */
+blockquote {
+  border-left: 3px solid var(--docintel-teal) !important;
+  background: rgba(20, 184, 166, 0.06) !important;
+  padding: 8px 14px !important;
+  border-radius: 0 6px 6px 0 !important;
+  font-size: 13px !important;
+}
+
+/* Tabs */
+.tab-nav button {
+  font-weight: 500 !important;
+}
+
+.tab-nav button.selected {
+  border-bottom: 2px solid var(--docintel-purple) !important;
+  color: var(--docintel-purple) !important;
+}
+
+/* Code blocks */
+code {
+  background: rgba(99, 102, 241, 0.1) !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  font-size: 0.85em !important;
+}
