@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 StudyBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="chat-wrapper">
+
+    <!-- Header -->
+    <div class="chat-header">
+        <div class="header-left">
+            <div class="bot-avatar">🎓</div>
+            <div>
+                <h2>StudyBot</h2>
+                <span class="status">● Online</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Messages -->
+    <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+            <div class="avatar">🎓</div>
+            <div class="bubble">
+                Hi! I'm <strong>StudyBot</strong> 👋<br>
+                I can help you with:<br>
+                📚 Course recommendations (Udemy, Coursera)<br>
+                🤔 Doubt clarification (Programming, Math, Science)<br>
+                🎯 Career guidance<br>
+                💡 Study tips & resources<br><br>
+                What would you like help with today?
+            </div>
+        </div>
+    </div>
+
+    <!-- Suggested Questions -->
+    <div class="suggestions">
+        <button class="suggestion-btn" onclick="sendSuggestion('What Python course should I take on Udemy?')">🐍 Python course on Udemy</button>
+        <button class="suggestion-btn" onclick="sendSuggestion('How do I start a career in data science?')">📊 Career in Data Science</button>
+        <button class="suggestion-btn" onclick="sendSuggestion('Explain recursion in simple terms')">💻 Explain Recursion</button>
+        <button class="suggestion-btn" onclick="sendSuggestion('Give me study tips for exams')">📝 Study Tips</button>
+    </div>
+
+    <!-- Input Area -->
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask me anything..." autocomplete="off">
+        <button id="sendBtn" onclick="sendMessage()">Send ➤</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
